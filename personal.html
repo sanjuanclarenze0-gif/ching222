@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/js/all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/fontawesome.min.css" rel="stylesheet">
+    <title>Finals</title>
+</head>
+<body>
+   <div class="container">
+    <div class="header">
+          <img src="image/icon.jpg" alt="icon" width="150px" height="150px">
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About us</a></li>
+            <li><a href="Gallery">Gallery</a></li>
+            <li><a href="Log in.html">Log out</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p class="counter">Entries: <span id="count">0</span> / 5</p>
+
+    <form id="personForm">
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+            <input type="number" id="age" placeholder="Age" required>
+        </div>
+        <div class="form-group">
+            <input type="date" id="birthday" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="birthplace" placeholder="Birthplace" required>
+        </div>
+        <button type="submit" id="submitBtn">Push to Table</button>
+    </form>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Birthday</th>
+                <th>Birthplace</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
+    </div>
+   </div>
+</html>
+<script src="js/script.js"></script>
